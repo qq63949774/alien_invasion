@@ -1,5 +1,7 @@
 class Settings:
-    """存储游戏《外星人入侵》中所有设置的类"""
+    """存储游戏《外星人入侵》中所有设置的类
+       用于初始化控制游戏外观和飞船速度的属性。
+    """
 
     def __init__(self):
         """初始化游戏设置"""
@@ -8,4 +10,4 @@ class Settings:
         self.screen_height = 800
         self.bg_color = (230, 230, 230)
         # 飞船设置
-        self.ship_speed = 1.5
+        self.ship_speed = 3.5

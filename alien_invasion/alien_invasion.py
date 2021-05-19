@@ -14,12 +14,10 @@ class AlienInvasion:
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
 
-
         pygame.display.set_caption("Alien Invasion")
         self.ship = Ship(self)
         # 设置背景色。
         self.bg_color = (230, 230, 230)
-
 
     def run_game(self):
         """开始游戏的主循环
@@ -58,12 +56,20 @@ class AlienInvasion:
             self.ship.moving_left = True
         elif event.key == pygame.K_q:
             sys.exit()
+        elif event.key == pygame.K_UP:
+            self.ship.moving_up = True
+        elif event.key == pygame.K_DOWN:
+            self.ship.moving_down = True
     def _check_keyup_events(self, event):
         """响应松开"""
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         if event.key == pygame.K_LEFT:
             self.ship.moving_left = False
+        if event.key == pygame.K_UP:
+            self.ship.moving_up = False
+        if event.key == pygame.K_DOWN:
+            self.ship.moving_down = False
 
 
 if __name__ == '__main__':
