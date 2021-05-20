@@ -14,7 +14,7 @@ class Ship:
         self.rect = self.image.get_rect()
 
         # 对于每艘新飞船， 都将其放在屏幕底部的中央。
-        self.rect.midbottom= self.screen_rect.midbottom
+        self.rect.midleft= self.screen_rect.midleft
         # 在飞船的属性x中存储小数值。
         self.x = float(self.rect.x)
         self.y = float(self.rect.y)
