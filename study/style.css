@@ -9,5 +9,9 @@
 .header {
     width: 1200px;
     height: 42px;
-    background-color: pink;
+    margin: 30px auto;
+}
+.pic {
+    width: 196px;
+    height: 42px;
 }
