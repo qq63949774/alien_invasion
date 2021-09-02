@@ -14,4 +14,99 @@
 .pic {
     width: 196px;
     height: 42px;
+    float: left;
+}
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+body {
+    background-color: #f3f5f7;
+}
+li {
+    list-style: none;
+    /* 去除列表前面的符号 */
+}
+a {
+    text-decoration: none;
+    /* 去除下划线 */
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    width: 412px;
+    height: 42px;
+    float: left;
+    background-color: skyblue;
+    margin-left: 70px;
+}
+.search input {
+    width: 345px;
+    /* padding-left会撑大盒子15px，所以width减去15px */
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    font-size: 14px;
+    color: #dfe0e2;
+    padding-left: 15px;
+    float: left;
+}
+.search button {
+    width: 50px;
+    height: 42px;
+    background-color: blue;
+    /* 按钮button有个默认的边框需要去除 */
+    border: 0;
+    float: left;
+    /* 行内块元素之间有缝隙 */
+    background: url(images/btn.png);
+}
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
+/* banner区域 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 421px;
+    background: url(images/banner2.png) no-repeat top center;
+}
+.subnav {
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0,0.3)
+}
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+.subnav ul li a:hover {
+    color: #0b8dd1;
+}
+.subnav ul li a span {
+    float: right;
 }

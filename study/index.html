@@ -7,12 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            var oSearch = document.getElementById("sear")
+            oSearch.onfocus = function () {
+                if (this.value == "请输入关键词") {
+                    this.value = " "
+                }
+                oSearch.onblur = function () {
+                    if (this.value == " ") {
+                        this.value = "请输入关键词"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <!-- 头部区域 -->
     <div class="header w">
         <div class="pic">
             <img src="images/学成在线.png" alt="">
+        </div>
+        <div class="nav">
+            <!-- 导航栏部分 -->
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <!-- 搜索框部分 -->
+            <input type="text" value="请输入关键词" id="sear">
+            <button></button>
+        </div>
+        <div class="user">
+            <!-- 用户模块 -->
+            <img src="images/user.png" alt="">
+            pybbbbbb
+        </div>
+    </div>
+    <div class="banner">
+        <div class="w">
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端开发<span> > </span></a></li>
+                    <li><a href="#">后端开发<span> > </span></a></li>
+                    <li><a href="#">移动开发<span> > </span></a></li>
+                    <li><a href="#">人工智能<span> > </span></a></li>
+                    <li><a href="#">商业预测<span> > </span></a></li>
+                    <li><a href="#">云计算&大数据<span> > </span></a></li>
+                    <li><a href="#">运维&从测试<span> > </span></a></li>
+                    <li><a href="#">UI设计<span> > </span></a></li>
+                    <li><a href="#">产品<span> > </span></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
