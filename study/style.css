@@ -93,7 +93,8 @@ a {
 .subnav {
     width: 190px;
     height: 421px;
-    background: rgba(0,0,0,0.3)
+    background: rgba(0,0,0,0.3);
+    float: left;
 }
 .subnav ul li {
     height: 45px;
@@ -109,4 +110,35 @@ a {
 }
 .subnav ul li a span {
     float: right;
+}
+.course {
+    width: 230px;
+    height: 300px;
+    background-color: pink;
+    float: right;
+    /* 浮动的盒子不会有外边距的合并问题 */
+    margin-top: 50px;
+}
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    line-height: 48px;
+    color: white;
+    text-align: center;
+}
+.bd {
+    padding: 0 20px;
+}
+.bd ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bd ul li h4 {
+    font-size: 18px;
+    color: #4e4e4e;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #aca9a9;
 }
